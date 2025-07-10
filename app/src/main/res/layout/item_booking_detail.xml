@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_bus" />
+
+    <TextView
+        android:id="@+id/busDetailName1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Shana Travels"
+        android:textColor="@color/Red"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:textAlignment="center"
+        android:background="@color/transparent"/>
+
+    <TextView
+        android:id="@+id/bookingDetail1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/Red"
+        android:background="@color/priya"
+        android:text="Booking Detail"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/bookingDetailFrom1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:text="No Booking Data......"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/bookingDetailTo1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:text="No Booking Data......"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/bookingDetailDate1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:text="No Booking Data......"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/ticketDetail1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/Red"
+        android:background="@color/priya"
+        android:text="Ticket Detail"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/ticketDetailNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:text="No Booking Data......"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/ticketDetailPrice1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:text="No Booking Data......"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/ticketDetailSeats1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:text="No Booking Data......"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/ticketDetailCondition1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:text="No Booking Data......"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/customerDetail1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/Red"
+        android:background="@color/priya"
+        android:text="Customer Detail"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/customerDetailName1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="No Booking Data......"
+        android:textSize="20sp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/customerDetailEmail1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:text="No Booking Data......"
+        android:background="@color/white"/>
+
+    <TextView
+        android:id="@+id/customerDetailPhone1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="20sp"
+        android:text="No Booking Data......"
+        android:background="@color/white"/>
+
+    <Button
+        android:id="@+id/cancelBookingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel Booking"
+        android:textColor="@android:color/white"
+        android:background="@color/Red"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

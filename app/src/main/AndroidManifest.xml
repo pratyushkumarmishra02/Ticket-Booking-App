@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ticketmaster">
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        tools:overrideLibrary="com.google.android.material" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TicketMaster"
+        tools:targetApi="34">
+        <activity
+            android:name=".AdminViewBookingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDeleteBusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminAddBusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DeleteProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UploadImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TicketMaster" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.TicketMaster" />
+        <activity
+            android:name=".Welcome"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".registration"
+            android:exported="false"
+            android:theme="@style/Theme.TicketMaster" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCSkbL6CGpHn81rfhdyMOD81UsYKl_PtUM" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".FinishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaybleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PointActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PayActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationActivity"
+            android:exported="false"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LocationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OfferActivity"
+            android:parentActivityName=".NavigationActivity" />
+        <activity
+            android:name=".EventActivity"
+            android:parentActivityName=".NavigationActivity" />
+        <activity
+            android:name=".ContactActivity"
+            android:parentActivityName=".NavigationActivity" />
+        <activity
+            android:name=".HelpActivity"
+            android:parentActivityName=".NavigationActivity" />
+        <activity
+            android:name=".DetailActivity"
+            android:parentActivityName=".NavigationActivity" />
+        <activity
+            android:name=".CancelActivity"
+            android:parentActivityName=".NavigationActivity" />
+        <activity
+            android:name=".SettingActivity"
+            android:parentActivityName=".NavigationActivity" />
+    </application>
+
+</manifest>

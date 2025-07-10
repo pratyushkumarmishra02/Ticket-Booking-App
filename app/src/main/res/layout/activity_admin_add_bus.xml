@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/destop"
+    tools:context=".AdminAddBusActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:navigationIcon="?attr/homeAsUpIndicator" />
+
+    <EditText
+        android:id="@+id/busNameInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter Bus Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/fromInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="From"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/busNameInput"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/toInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="To"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fromInput"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/departureTimeInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Departure Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toInput"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/arrivalTimeInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Arrival Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/departureTimeInput"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/dailyBusQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If you want to run bus daily?"
+        app:layout_constraintTop_toBottomOf="@id/arrivalTimeInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/dailyBusRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/dailyBusQuestion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <RadioButton
+            android:id="@+id/radioYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radioNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/dateInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Select Date"
+        android:focusable="false"
+        android:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dailyBusRadioGroup"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/travelsNameInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Amount of ticket"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateInput"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/busNumberInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Bus Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/travelsNameInput"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/busConditionInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Bus Condition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/busNumberInput"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/addBusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Bus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/busConditionInput"
+        android:layout_marginTop="16dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/busRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/addBusButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

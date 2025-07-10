@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#1AFFFFFF </color>
+    <color name="Red">#e91818</color>
+    <color name="Green">#008000</color>
+    <color name="sky">#00f9f5</color>
+    <color name="purpal">#800080</color>
+    <color name="blue">#0000FF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="Magenta">#FF00FF</color>
+    <color name="Gray">#808080</color>
+    <color name="Dark_Purple">#301934</color>
+    <color name="Violet">#EE82EE</color>
+    <color name="Orchid">#DA70D6</color>
+    <color name="Plum">#DDA0DD</color>
+    <color name="lime">#00FF00</color>
+    <color name="Lime_Green">#32CD32</color>
+    <color name="Lime_Yellow">#C7EA46</color>
+    <color name="Lavender">#E6E6FA</color>
+    <color name="Brown">#A52A2A</color>
+    <color name="Saddle_Brown">#8B4513</color>
+    <color name="Sienna">#A0522D</color>
+    <color name="Chocolate">#D2691E</color>
+    <color name="Silver">#C0C0C0</color>
+    <color name="pink">#FFC0CB</color>
+    <color name="ocean_blue">#0077BE</color>
+    <color name="rgb">#011990</color>
+    <color name="light_grey">#D3D3D3</color>
+    <color name="dark_grey">#A9A9A9</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary1">#3F51B5</color>
+    <color name="colorPrimaryDark1">#303F9F</color>
+    <color name="colorAccent1">#ed1162</color>
+    <color name="dargray">#ee522f</color>
+    <color name="inthu">#e614be</color>
+    <color name="suva">#003333</color>
+    <color name="i">#00BCD4</color>
+    <color name="n">#E5F09D</color>
+    <color name="t">#FF7936</color>
+    <color name="h">#108783</color>
+    <color name="u">#25A89F</color>
+    <color name="j">#A8A2A2</color>
+    <color name="a">#29FF86</color>
+    <color name="d">#108783</color>
+    <color name="q">#F7E7BB</color>
+    <color name="w">#FFCCCC</color>
+    <color name="priya">#87C6E2</color>
+    <color name="thusha">#BBEBE7</color>
+    <color name="niro">#B9F1BC</color>
+
+</resources>
